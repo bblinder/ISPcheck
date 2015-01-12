@@ -2,7 +2,7 @@
 
 red='\033[0;31m'
 green='\033[0;32m'
-currentIP=$(curl -s icanhazip.com)
+currentIP=$(curl -s icanhazip.com -4)
 
 if [[ $currentIP == 69.* ]]
 then
