@@ -8,9 +8,10 @@ if [[ $currentIP == 69.* ]]
 then
 	echo -e "${red}Towerstream"
 elif
-	[[ $currentIP -ne '69.*' ]]
+	[[ $currentIP == 24.* ]]
+
 then
-	echo "${green}Time Warner"
+	echo "Time Warner"
 else
 	echo "Not connected to the internet :-("
 fi
