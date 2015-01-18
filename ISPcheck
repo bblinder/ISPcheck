@@ -1,6 +1,7 @@
 #!/bin/bash
 
 red='\033[0;31m'
+green='\033[32m'
 currentIP=$(curl -s icanhazip.com -4)
 
 if [[ $currentIP == 69.* ]]
@@ -9,7 +10,7 @@ then
 elif
 	[[ $currentIP == 24.* ]]
 then
-	echo "Time Warner"
+	echo -e "${green}Time Warner"
 else
 	echo "${red}Not connected to the internet :-("
 fi
