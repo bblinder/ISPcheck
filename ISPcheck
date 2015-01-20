@@ -12,6 +12,6 @@ elif
 then
 	echo -e "${green}Time Warner"
 else
-	echo "${red}Not connected to the internet :-("
+	echo -e "${red}Not connected to the internet :-("
 fi
 
