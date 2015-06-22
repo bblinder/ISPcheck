@@ -7,10 +7,12 @@ currentIP=$(curl -s icanhazip.com -4)
 if [[ $currentIP == 69.* ]]
 then
 	echo -e "${red}Towerstream"
+	echo -n "red" | nc -4u -w0 localhost ${2:-1738}
 elif
 	[[ $currentIP == 24.* ]]
 then
 	echo -e "${green}Time Warner"
+	echo -n "green" | nc -4u -w0 localhost ${2:-1738}
 else
 	echo -e "${red}Not connected to the internet :-("
 fi
