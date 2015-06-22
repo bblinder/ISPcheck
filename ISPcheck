@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## Written for compatibility with, though doesn't require, anybar for OSX:
+## https://github.com/tonsky/AnyBar
+
 red='\033[0;31m'
 green='\033[32m'
 currentIP=$(curl -s icanhazip.com -4)
