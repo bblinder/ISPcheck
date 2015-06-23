@@ -18,5 +18,6 @@ then
 	echo -n "green" | nc -4u -w0 localhost ${2:-1738}
 else
 	echo -e "${red}Not connected to the internet :-("
+	echo -n "exclamation" | nc -4u -w0 localhost ${2:-1738}
 fi
 
