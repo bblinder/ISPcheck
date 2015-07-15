@@ -1,12 +1,10 @@
 #!/bin/bash
 
-"""
-Written for compatibility with, though doesn't require, anybar for OSX:
-https://github.com/tonsky/AnyBar
+# Written for compatibility with, though doesn't require, anybar for OSX:
+# https://github.com/tonsky/AnyBar
 
-Uses the BSD implementation of nc/netcat, so the same flags won't all work
-on Linux systems.
-"""
+# Uses the BSD implementation of nc/netcat, so the same flags won't all work
+# on Linux systems.
 
 red='\033[0;31m'
 green='\033[32m'
